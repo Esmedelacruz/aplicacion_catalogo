@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>proyecto</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="css/temas.min.css." />
+<link rel="stylesheet" href="temas.min.css" />
+<link rel="stylesheet" href="css/tema_app.min.css" />
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+
+
+<!-- Principal -->
+<div data-role="page" id="principal" >  
+<!--panel-->
+ <div data-role="panel" id="mypanel" data-theme="a">
+ <h1 align="center">OPCIONES</h1>
+ 
+ <ul id="menu" data-role="listview" data-theme="b">
+  <li data-theme="b" ><a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r" id="btnlista">LISTA DE CALZADO</a></li><p>
+  <li data-theme="c"><a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">MARCA</a></li><p>
+
+ </ul>
+ </div>
+ <!--/panel-->
+   <div data-role="header" align="center">
+   <h1>BIENVENIDO</h1>
+   
+    <a href="#mypanel" class=" ui-btn ui-icon-bars ui-btn-icon-notext ui-btn-left" id="btnmenu"></a>
+   </div>
+
+     <div data-role="main" class="ui-content">
+      <div align="center">
+     <img src="imagenes/logo.png" width="300" height="150" id="portada">
+ </div>
+     </div>
+ <div data-role="footer" align="center">
+    <h1>EVA, GUADALUPE, LADY & ESME</h1>
+    <img src="imagenes/collage.JPG" width="300" height="220"  >
+ </div>
+
+</div>
+   
+ <!-- Principal -->
+ 
+  <!-- pagina1 -->
+  
+  <style type="text/css">
+body {
+	background-color: #126A7A;
+	color: #FFF;
+	font-family: "Courier New", Courier, monospace;
+}
+body,td,th {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.err {
+	color: #F00;
+}
+</style>
+
+ <div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="b">
+
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ 
+   <div align="center">
+ <img src="imagenes/logo.png" width="300" height="150">
+ </div>
+   </div>
+   
+   
+<div data-role="main" class="ui-content">
+ <div id="contenido">
+  
+ </div>
+
+</div>  
+</div>
+<!-- pagina1 -->
+
+ 
+ 
+   <!-- pagina2 -->
+ <div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ 
+
+   <br><h1>MARCAS </h1>
+ <div align="center">
+ <img src="imagenes/logo.png" width="300" height="150">
+ </div>
+  
+   </div>
+<div data-role="main" class="ui-content" data-theme="b">
+  <ul id="marca" data-role="listview" data-theme="b" >
+  <li data-theme="a"><a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r btnmarca" id="Nike">NIKE</a></li><p>
+  <li data-theme="c"><a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r btnmarca" id="Adidas">ADIDAS</a></li><p>
+  <li data-theme="a"><a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r btnmarca" id="Reebook">REEBOOK</a></li><p>
+  <li data-theme="b"><a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r btnmarca" id="Puma">PUMA</a></li><p>
+  <li data-theme="c"><a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r btnmarca" id="Vans">VANS</a></li><p>
+  
+ </ul>
+</div>
+
+
+</div>
+<!-- pagina2 -->
+
+
+
+
+ 
+</body>
+</html>
