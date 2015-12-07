@@ -12,7 +12,7 @@ document.addEventListener("deviceready",function(){
 			success: function(respuesta){
 				var producto = JSON.parse(respuesta);
 			$('#contenido').empty();
-			for(var $x=0;$x < producto.tenis.length;$x++)
+			for(var $x=0;$x < producto.tenis.length;$x++) 
 			{
 								alert ("entraste a la lista 2");
 
@@ -28,14 +28,16 @@ document.addEventListener("deviceready",function(){
 	
 	
 	$('#btnlista').on('tap',function(){
-    $.ajax({
+	alert ("entraste a la lista");
+	    $.ajax({
 			type: "POST",
 			url: "http://192.168.1.160/proyecto_catalogo/buscartodo.php",
 			data: "",
-			error: function(err){alert("error en conexion todos" + err);},
+			error: function (){alert("error en conexion todos");},
 			success: function(respuesta){
 				
 				var producto = JSON.parse(respuesta);
+				
 			$('#contenido').empty();
 			for(var $x=0;$x < producto.tenis.length;$x++)
 			{
