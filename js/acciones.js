@@ -8,7 +8,7 @@ document.addEventListener("deviceready",function(){
 			type: "POST",
 			url: "http://192.168.1.160/proyecto_catalogo/buscarmarca.php",
 			data: "marca=" + $(this).attr('id'),
-			error: function(){alert("error en conexion");} ,
+			error: function(e){alert("error en conexion " + e);} ,
 			success: function(respuesta){
 				var producto = JSON.parse(respuesta);
 			$('#contenido').empty();
