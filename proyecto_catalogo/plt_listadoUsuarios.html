@@ -1,0 +1,60 @@
+<!--{encabezado}-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style type="text/css">
+.estilo1 {
+	color: #006;
+}
+</style>
+</head>
+
+<body>
+<div align="left">
+<a href="principal.php"> menu</a>
+</div>
+<div align="right" class="estilo1">
+<span class="estilo1">{actual}</span>
+</div>
+<div align="center">
+<h1> Listado de Usuarios </h1>
+
+<table width="200" border="1">
+
+   
+  <tr>
+ 
+ 
+    <th scope="col">Nombre de Usuario</th>
+    <th scope="col">Borrar</th>
+    <th scope="col">Editar</th>
+  
+  </tr>
+	<!--{/encabezado}-->						
+   <!--{fila}-->
+    
+   
+  <tr>
+  
+    <td>{usuario}</td>
+    <td>
+    <a href="detalleBorrarUsuario.php ?usuario={usuario}">
+    <img src="recursos/imagenes/opciones/borrar.png" width="24" height="24">
+    </a>
+    </td>
+    <td>
+    <a href="detalleEditarUsuario.php?usuario={usuario}">
+    <img src="recursos/imagenes/opciones/editar.png" width="24" height="24">
+     </a>
+    </td>
+  </tr>
+ <!--{/fila}-->
+ <!--{pie}--> 
+</table>
+
+</div>
+</body>
+</html>
+<!--{/pie}-->

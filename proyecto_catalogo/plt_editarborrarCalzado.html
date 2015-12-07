@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<style type="text/css">
+.mora {
+	color: #60C;
+}
+
+</style>
+<style type="text/css">
+.est2 {
+	color: #F03;
+}
+
+</style>
+
+</head>
+
+<body>
+<p align="left"><a href="Principal.php">Menu</a></p> <p align="right">{actual}</p>
+<div align="center" class="mora"><h1>{titulo}</h1></div>
+<form action="editarborrarCalzado.php" method="post">
+<div align="center">
+<h2>CALZADO</h2>
+<h2>Modelo:</h2>
+<input name="txtmodelo" type="text" value="{modelo}" readonly >
+<h2> Marca: </h2>
+<input name="txtmarca" type="text" value="{marca}" readonly>
+<h2> Color disponible: </h2>
+<input name="txtcolodispo" type="text" maxlength="20" value="{color_dispo}" readonly>
+<h2> Precio</h2>
+<input name="txtprecio" type="text" maxlength="10" value="{precio}" {editable}>
+<h2> Descripcion</h2>
+<input name="txtdescripcion" type="text" maxlength="100" value="{descripcion}" readonly>
+<h2> Tallas disponibles</h2>
+<input name="txttallasdispo" type="text" maxlength="10" value="{tallas_dispo}" {editable}>
+<h2> Acción</h2>
+<input name="txtaccion" type="text" value="{accion}" readonly>
+<br>
+<br>
+   <input name="" type="submit" value="borrar" {btnBorrar}>
+   <input name="" type="submit" value="guardar" {btnGuardar}>
+   <input name="" type="button" value="cancelar">
+
+</div>
+</form>
+
+</body>
+</html>

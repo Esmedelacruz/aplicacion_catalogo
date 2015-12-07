@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style type="text/css">
+.estilo1 {
+	color: #030;
+}
+.estilo2 {
+	color: #009;
+}
+</style>
+</head>
+
+<body>
+<div align="right">
+<span class="estilo1">{usuario}</span>
+</div>
+<a href="principal.php">Menú</a>
+<div align="center">
+<h1> Alta de un Calzado </h1>
+</div>
+<form action="altaCalzado.php" method="post" class="estilo2" enctype="multipart/form-data">
+<div align="center">
+<h2> Modelo </h2>
+<input name="txtmodelo" type="text" maxlength="25">
+<h2> Marca </h2>
+<input name="txtmarca" type="text" maxlength="25">
+<h2> Color Disponible </h2>
+<input name="txtcolordispo" type="text" maxlength="20">
+<h2> Precio </h2>
+<input name="txtprecio" type="text" maxlength="10">
+<h2> Descripcion </h2>
+<input name="txtdescripcion" type="text" maxlength="100">
+<h2> Tallas Disponibles </h2>
+<input name="txttallasdispo" type="text" maxlength="10">
+<h2> Buscar Foto: </h2>
+<input name="imagen" type="file">
+<input type="hidden" name="MAX_FILE_SIZE" value="2097152">
+<br>
+<br>
+<span class="estilo1">{mensaje}</span><!--Aqui va el mensaje informando al usuario si se agrego o no el amigo-->
+<br>
+<br>
+<input name="" type="submit" value="Enviar">
+<input name="" type="reset" value="Cancelar">
+</div>
+</form>
+</body>
+</html>
