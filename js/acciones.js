@@ -22,18 +22,6 @@ document.addEventListener("deviceready",function(){
 			});//ajax todos
 	});
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	$('#btnlista').on('tap',function(){
 	    $.ajax({
 			type: "POST",
@@ -41,7 +29,6 @@ document.addEventListener("deviceready",function(){
 			data: "",
 			error: function (){alert("error en conexion todos");},
 			success: function(respuesta){
-				alert(respuesta);
 				var producto = JSON.parse(respuesta);
 				
 			$('#contenido').empty();
