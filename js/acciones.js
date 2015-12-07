@@ -8,7 +8,7 @@ document.addEventListener("deviceready",function(){
 			type: "POST",
 			url: "http://192.168.1.160/proyecto_catalogo/buscarmarca.php",
 			data: "marca=" + $(this).attr('id'),
-			error: function(e){alert("error en conexion " + e);} ,
+			error: function(){alert("error en conexion ");} ,
 			success: function(respuesta){
 				var producto = JSON.parse(respuesta);
 			$('#contenido').empty();
@@ -28,13 +28,13 @@ document.addEventListener("deviceready",function(){
 	
 	
 	$('#btnlista').on('tap',function(){
-	alert ("entraste a la lista");
     $.ajax({
 			type: "POST",
 			url: "http://192.168.1.160/proyecto_catalogo/buscartodo.php",
 			data: "",
-			error: function(){alert("error en conexion");} ,
+			error: function(err){alert("error en conexion todos" + err);},
 			success: function(respuesta){
+				alert (respuesta);
 				var producto = JSON.parse(respuesta);
 			$('#contenido').empty();
 			for(var $x=0;$x < producto.tenis.length;$x++)
